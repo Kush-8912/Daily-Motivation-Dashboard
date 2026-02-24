@@ -1,16 +1,83 @@
-# React + Vite
+# Daily Motivation Dashboard 🌞
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **React** project that fetches motivational quotes and allows users to like/unlike quotes.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 👨‍🎓 Student Details
 
-## React Compiler
+- **Name:** Kushagra Aggarwal  
+- **Roll Number:** 25BCS10163  
+- **Student Mail ID:** kushagra.25bcs10163@sst.scaler.com  
+- **Submitted to:** Mrinal Bhattacharya Sir  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📌 Project Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The **Daily Motivation Dashboard** is a React-based web application designed to provide students with daily motivation through random quotes.
+
+The app fetches a random quote from an API and displays it with the author name. Users can:
+- fetch a new quote
+- like/unlike the current quote ❤️
+- view the total number of liked quotes
+- search/filter liked quotes
+- view a list of liked quotes
+
+---
+
+## 🚀 Features
+
+- ✅ Fetch random quote using API
+- ✅ Display quote and author
+- ✅ New Quote button
+- ✅ Like / Unlike toggle ❤️
+- ✅ Total liked quotes count
+- ✅ Search/filter liked quotes
+- ✅ Loading state handling
+- ✅ Error handling
+- ✅ Conditional rendering for empty/loading/error states
+- ✅ Responsive UI (mobile-friendly)
+
+---
+
+## 🛠️ Technologies Used
+
+- **React**
+- **JavaScript**
+- **CSS**
+- **DummyJSON Quotes API**
+
+---
+
+## 🌐 API Used
+
+- **Random Quote API:** `https://dummyjson.com/quotes/random`
+
+---
+
+## 🧠 React Concepts Used
+
+This project demonstrates the following React concepts:
+
+- `useState` for UI and data state management
+- `useEffect` for API call on initial load
+- Conditional rendering (`loading`, `error`, `empty`)
+- `map()` to render liked quotes list
+- `filter()` for search functionality
+- Toggle interaction (Like/Unlike)
+
+---
+
+## 📂 Project Structure
+
+```bash
+daily-motivation-dashboard/
+│── src/
+│   ├── App.jsx       # Main component logic
+│   ├── App.css       # Component styling
+│   ├── index.css     # Global/root full-width styles
+│   └── main.jsx      # React entry point
+│
+├── package.json
+└── README.md
