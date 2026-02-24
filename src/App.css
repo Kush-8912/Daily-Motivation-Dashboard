@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #cfdcf1, #e6eefc);
+  color: #222;
+}
+.app {
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  border-radius: 0;
+  padding: 24px;
+  box-shadow: none;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 6px;
+  font-size: 28px;
+}
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+.quote-card {
+  background: #f9fafb;
+  border: 1px solid #ececec;
+  border-radius: 14px;
+  padding: 20px;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.quote-text {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.author-text {
+  text-align: right;
+  color: #555;
+  font-weight: bold;
+}
+.loading-text,
+.empty-text {
+  text-align: center;
+  color: #666;
+}
+.error-text {
+  text-align: center;
+  color: #c0392b;
+  font-weight: bold;
+}
+.button-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.primary-btn {
+  background: #2563eb;
+  color: white;
+}
+.primary-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+.like-btn {
+  background: #f3f4f6;
+  color: #333;
+}
+.like-btn.liked {
+  background: #ffe4e6;
+  color: #be123c;
+  font-weight: bold;
+}
+.stats {
+  margin-top: 14px;
+  background: #f5f7fb;
+  border: 1px solid #e6ecf5;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: #333;
+  font-weight: 600;
+}
+.search-box {
+  margin-top: 18px;
+}
+.search-box input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+.search-box input:focus {
+  border-color: #2563eb;
+}
+.liked-section {
+  margin-top: 22px;
+}
+.liked-section h2 {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+.liked-list {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+.liked-item {
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  padding: 14px;
+  background: #fff;
+}
+.liked-quote {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.liked-author {
+  text-align: right;
+  color: #555;
+  font-weight: 600;
+}
+.footer {
+  margin-top: 24px;
+  padding-top: 14px;
+  border-top: 1px solid #ececec;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  .quote-text {
+    font-size: 18px;
+  }
+  .button-row {
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
+  }
+  .container {
+    padding: 16px;
+  }
+}
