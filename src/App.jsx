@@ -4,7 +4,7 @@ const BACKUP_API = "https://dummyjson.com/quotes/random";
 export default function App() {
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [likedQuotes, setLikedQuotes] = useState([]);
   const [currentQuoteId, setCurrentQuoteId] = useState("");
   const [error, setError] = useState("");
@@ -12,19 +12,6 @@ export default function App() {
   useEffect(() => {
     fetchRandomQuote();
   }, []);
-  useEffect(() => {
-    const savedLikes = localStorage.getItem("likedQuotes");
-    if (savedLikes) {
-      try {
-        setLikedQuotes(JSON.parse(savedLikes));
-      } catch (err) {
-        console.error("Failed to parse liked quotes from localStorage", err);
-      }
-    }
-  }, []);
-  useEffect(() => {
-    localStorage.setItem("likedQuotes", JSON.stringify(likedQuotes));
-  }, [likedQuotes]);
   const fetchRandomQuote = async () => {
     setLoading(true);
     setError("");
@@ -69,9 +56,7 @@ export default function App() {
   });
   let quoteContent = null;
   if (loading) {
-    quoteContent = (
-      <p className="loading-text">Loading a motivational quote...</p>
-    );
+    quoteContent = <p className="loading-text">Loading a motivational quote...</p>;
   } else if (error) {
     quoteContent = <p className="error-text">{error}</p>;
   } else if (quote) {
@@ -86,13 +71,9 @@ export default function App() {
   }
   let likedListContent = null;
   if (likedQuotes.length === 0) {
-    likedListContent = (
-      <p className="empty-text">You haven’t liked any quotes yet.</p>
-    );
+    likedListContent = <p className="empty-text">You haven’t liked any quotes yet.</p>;
   } else if (filteredLikedQuotes.length === 0) {
-    likedListContent = (
-      <p className="empty-text">No liked quotes match your search.</p>
-    );
+    likedListContent = <p className="empty-text">No liked quotes match your search.</p>;
   } else {
     likedListContent = (
       <ul className="liked-list">

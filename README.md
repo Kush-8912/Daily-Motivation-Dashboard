@@ -1,28 +1,28 @@
 # Daily Motivation Dashboard 🌞
 
-A simple **React** project that fetches motivational quotes and allows users to like/unlike quotes.
+A simple React project that fetches motivational quotes and allows users to like/unlike quotes with search functionality.
 
 ---
 
 ## 👨‍🎓 Student Details
 
-- **Name:** Kushagra Aggarwal  
-- **Roll Number:** 25BCS10163  
-- **Student Mail ID:** kushagra.25bcs10163@sst.scaler.com  
-- **Submitted to:** Mrinal Bhattacharya Sir  
+- **Name:** Kushagra Aggarwal
+- **Roll Number:** 25BCS10163
+- **Student Mail ID:** kushagra.25bcs10163@sst.scaler.com
+- **Submitted to:** Mrinal Bhattacharya Sir
 
 ---
 
 ## 📌 Project Overview
 
-The **Daily Motivation Dashboard** is a React-based web application designed to provide students with daily motivation through random quotes.
+The **Daily Motivation Dashboard** is a React-based web application that displays a random motivational quote from an API.
 
-The app fetches a random quote from an API and displays it with the author name. Users can:
-- fetch a new quote
-- like/unlike the current quote ❤️
-- view the total number of liked quotes
-- search/filter liked quotes
-- view a list of liked quotes
+Users can:
+- Fetch a new quote
+- Like / Unlike the current quote ❤️
+- View total liked quotes
+- Search and filter liked quotes
+- View all liked quotes in a list
 
 ---
 
@@ -36,8 +36,8 @@ The app fetches a random quote from an API and displays it with the author name.
 - ✅ Search/filter liked quotes
 - ✅ Loading state handling
 - ✅ Error handling
-- ✅ Conditional rendering for empty/loading/error states
-- ✅ Responsive UI (mobile-friendly)
+- ✅ Conditional rendering (loading / error / empty states)
+- ✅ Responsive UI
 
 ---
 
@@ -58,14 +58,15 @@ The app fetches a random quote from an API and displays it with the author name.
 
 ## 🧠 React Concepts Used
 
-This project demonstrates the following React concepts:
+This project demonstrates:
 
-- `useState` for UI and data state management
+- `useState` for managing UI and data state
 - `useEffect` for API call on initial load
-- Conditional rendering (`loading`, `error`, `empty`)
-- `map()` to render liked quotes list
+- Conditional rendering using `if/else`
+- `map()` for rendering liked quotes list
 - `filter()` for search functionality
 - Toggle interaction (Like/Unlike)
+- Controlled input (`searchTerm`)
 
 ---
 
@@ -74,9 +75,9 @@ This project demonstrates the following React concepts:
 ```bash
 daily-motivation-dashboard/
 │── src/
-│   ├── App.jsx       # Main component logic
-│   ├── App.css       # Component styling
-│   ├── index.css     # Global/root full-width styles
+│   ├── App.jsx       # Main React component logic
+│   ├── App.css       # Styling for dashboard UI
+│   ├── index.css     # Global styles (full-width layout)
 │   └── main.jsx      # React entry point
 │
 ├── package.json
