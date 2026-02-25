@@ -10,6 +10,7 @@ A React project that fetches motivational quotes and allows users to like/unlike
 - **Roll Number:** 25BCS10163
 - **Student Mail ID:** kushagra.25bcs10163@sst.scaler.com
 - **Submitted to:** Mrinal Bhattacharya Sir
+- **Deployed Link:** https://daily-motivation-dashboard-vert.vercel.app/
 
 ---
 
